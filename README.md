@@ -20,28 +20,27 @@ pip3 install pyautogui
 It's app that can know where is your mouse position
 How to Use it :
 	- first thing you do is to clone this repositories
-    ```
+    `````
 	git clone https://github.com/thisnugroho/autoclicker-ice
 	cd autoclicker-ice
-	```
+	````
     - if you using linux you need to change the permission first,this is how you do it
-    ```
+    ````
 	chmod +x main.py
-	```
+	````
     and then run it with this command if you using linux
-    ```
+    ````
 	./main.py
-	```
+	````
     or you just can run it with( windows or linux is ok)
-    ```
+    ````
 	py main.py
 	python main.py
 	python3 main.py
-	```
+	````
     - and then you will enter the app
-	
     ![enter image description here](http://imgur.com/ognAAYUl.png)
-	
+
     - input number 1 to check the coordinates
 	- and press CTRL + C to exit
 	- that's all.
