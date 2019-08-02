@@ -71,7 +71,7 @@ def main():
     print("""
     1.Check Coordinates
     2.Auto Clicker (Multiple Position)
-    3.Auto Clicker Normal (Current Pointer Position)            )
+    3.Auto Clicker Normal (Current Pointer Position)
     """)
     opsi = input("Input : ")
     if opsi == '1':
