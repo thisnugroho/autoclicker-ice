@@ -9,23 +9,23 @@ from pynput.keyboard import *
 
 
 #------------------------------------
-# Setup
-# =================================
-# Position 1
+#Setup
+#=================================
+#Position 1
 x = 588
 y = 331
-# if there is any Position
+#if there is any Position (Position 2)
 x1 = 793
 y1 = 338
-# Just add some  x2,y2, . . .
-# if there is more than 1 position
-# Time Delay                         
+#Just add some  x2,y2, . . .
+#if there is more than 1 position
+#Time Delay                         
 delay = 0.1                     
-# Set Shortcut                  
+#Set Shortcut                  
 p = Key.f4 # Pause              
 r = Key.f2 # Resume             
 s = Key.esc # Exit / Stop       
-# ===============================
+#===============================
 
 pause = True
 running = True
