@@ -39,8 +39,10 @@ How to Use it :
 	python3 main.py
 	````
 	- and then you will enter the app
-	![enter image description here](http://imgur.com/ognAAYUl.png)
-	- input number 1 to check the coordinates
+	
+    ![enter image description here](http://imgur.com/ognAAYUl.png)
+	
+    - input number 1 to check the coordinates
 	- and press CTRL + C to exit
 	- that's all.
 	
