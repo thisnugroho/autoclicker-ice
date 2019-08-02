@@ -25,7 +25,7 @@ How to Use it :
 	cd autoclicker-ice
 	````
     
-    - if you using linux you need to change the permission first,this is how you do it
+- if you using linux you need to change the permission first,this is how you do it
     
     ````
 	chmod +x main.py
@@ -45,15 +45,15 @@ How to Use it :
 	python3 main.py
 	````
     
-    - and then you will enter the app
+- and then you will enter the app
     
     ![enter image description here](http://imgur.com/ognAAYUl.png)
     
-    - input number 1 to check the coordinates
+- input number 1 to check the coordinates
 	
-    - and press CTRL + C to exit
+- and press CTRL + C to exit
 	
-    - that's all.
+- that's all.
 	
 2.  Autoclicker with many position
 	- First thing you need is where is the position that you will work on.
