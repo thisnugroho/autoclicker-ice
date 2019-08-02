@@ -1,7 +1,9 @@
 # Auto Clicker By Ice Using Python 
   
 
-#### Screenshoot of the App![Screenshoot App](http://imgur.com/ognAAYUl.png)
+#### Screenshoot of the App
+
+![Screenshoot App](http://imgur.com/ognAAYUl.png)
 
 ## Requirement
 - You need install pyautogui first if you don't have it
@@ -12,7 +14,9 @@ pip3 install pyautogui
 ```` 
 ## Feature And How to Use
 1.  Check Coordinates
+
 ![Check Coordinates](http://imgur.com/0Ve8dLvl.png)
+
 It's app that can know where is your mouse position
 How to Use it :
 	- first thing you do is to clone this repositories
