@@ -22,7 +22,7 @@ y1 = 338
 # Time Delay                         
 delay = 0.5                     
 # Set Shortcut                  
-p = Key.f1 # Pause              
+p = Key.f3 # Pause              
 r = Key.f2 # Resume             
 s = Key.esc # Exit / Stop       
 # ===============================
@@ -60,10 +60,13 @@ def on_press(key):
 
 
 def main():
+    print('\n')
+    print('Press Ctrl-C to quit.')
+    print('#####################')
     print('Ice Auto Clicker Tools')
-    print('----------------------')
+    print('#####################')
     print("""
-    1.Cek Posisi
+    1.Check Coordinates
     2.Auto
     """)
     opsi = input("Input : ")
