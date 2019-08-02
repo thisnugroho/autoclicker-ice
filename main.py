@@ -27,7 +27,7 @@ r = Key.f2 # Resume
 s = Key.esc # Exit / Stop       
 # ===============================
 
-pause = False
+pause = True
 running = True
 
 def cekPosisi():
@@ -72,6 +72,7 @@ def main():
         cekPosisi()
 
     elif opsi == '2':
+            print('Please Press F2 to start . . .')
         #     Add Listener to get keyboard Pressed
             lis = Listener(on_press=on_press)
             lis.start()
