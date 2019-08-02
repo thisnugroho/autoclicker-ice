@@ -3,10 +3,10 @@
 import pyautogui, sys, os
 import time
 from pynput.keyboard import *
+########################################
+# Auto Clicker with Coordinates by Ice #
+########################################
 
-# to do next 
-# try to put value on x,y and x1, y1
-# try the app
 
 #------------------------------------
 # Setup
@@ -17,12 +17,14 @@ y = 331
 # if there is any Position
 x1 = 793
 y1 = 338
-# Delay
-delay = 0.5
-# Set Shortcut
-p = Key.f1 # Pause
-r = Key.f2 # Resume
-s = Key.esc # Exit / Stop
+# Just add some  x2,y2, . . .
+# if there is more than 1 position
+# Time Delay                         
+delay = 0.5                     
+# Set Shortcut                  
+p = Key.f1 # Pause              
+r = Key.f2 # Resume             
+s = Key.esc # Exit / Stop       
 # ===============================
 
 pause = False
@@ -37,7 +39,8 @@ def cekPosisi():
             print(positionStr, end='')
             print('\b' * len(positionStr), end='', flush=True)
     except KeyboardInterrupt:
-            print('\n')
+            print('Bye')
+            exit(0)
 
 def auto(x, y):
         pyautogui.click(x = x, y = y)
@@ -69,10 +72,12 @@ def main():
         cekPosisi()
 
     elif opsi == '2':
+        #     Add Listener to get keyboard Pressed
             lis = Listener(on_press=on_press)
             lis.start()
             while running:
                     if not pause:
+                        #     Running The Auto Clicker
                             auto(x, y)
                             auto(x1, y1)
                             pyautogui.PAUSE = delay
@@ -80,6 +85,7 @@ def main():
             print('See Ya !')
     else:
             print('Sorry,Wrong Input')
+
 if __name__ == '__main__':
         try:
                 main()
