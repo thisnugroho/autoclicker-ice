@@ -20,9 +20,9 @@ y1 = 338
 # Just add some  x2,y2, . . .
 # if there is more than 1 position
 # Time Delay                         
-delay = 0.5                     
+delay = 0.1                     
 # Set Shortcut                  
-p = Key.f3 # Pause              
+p = Key.f4 # Pause              
 r = Key.f2 # Resume             
 s = Key.esc # Exit / Stop       
 # ===============================
@@ -44,6 +44,9 @@ def cekPosisi():
 
 def auto(x, y):
         pyautogui.click(x = x, y = y)
+
+def autoSingle():
+        pyautogui.click()
 
 def on_press(key):
         global running, pause
@@ -67,7 +70,8 @@ def main():
     print('#####################')
     print("""
     1.Check Coordinates
-    2.Auto
+    2.Auto Clicker (Multiple Position)
+    3.Auto Clicker Normal (Current Pointer Position)            )
     """)
     opsi = input("Input : ")
     if opsi == '1':
@@ -87,6 +91,19 @@ def main():
                             pyautogui.PAUSE = delay
             lis.stop()
             print('See Ya !')
+    elif opsi == '3':
+            print('Please Press F2 to start . . .')
+        #     Add Listener to get keyboard Pressed
+            lis = Listener(on_press=on_press)
+            lis.start()
+            while running:
+                    if not pause:
+                        #     Running The Auto Clicker
+                            autoSingle()
+                            pyautogui.PAUSE = delay
+            lis.stop()
+            print('See Ya !')
+
     else:
             print('Sorry,Wrong Input')
 
